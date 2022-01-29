@@ -1,0 +1,122 @@
+#menu {
+    background: #1A1C1E;
+    margin: 0;
+    width: auto;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+#menu:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#menu ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+#menu ul li a {
+    text-decoration: none;
+
+}
+#menu ul li {
+    float: left;
+}
+
+#menu ul li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    z-index: 0;
+    background: white;
+    transition: height .2s;
+}
+#menu ul li a {
+
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 2;
+    position: relative;
+}
+#menu ul li:hover:after,
+#menu ul li.active:after {
+    height: 100%;
+}
+#menu ul li:hover a,
+#menu ul li.active a {
+    color: #000000;
+}
+
+#menu ul li a {
+    display: block;
+}
+#menu ul li.m1 a {
+    padding-right: 20px;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+
+#mySidenav a {
+    position: fixed;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#mySidenav a:hover {
+    right: 0;
+}
+
+
+.menu_in{
+    padding: 155px 0 0 0;
+    text-align: center;
+}
+.menu_in h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+.menu_in p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+}
+
+footer{
+    color: white;
+    background-color: #212121;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}

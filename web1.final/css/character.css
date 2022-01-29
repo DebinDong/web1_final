@@ -1,0 +1,193 @@
+#homepage {
+    top: 360px;
+    background-color: #555;
+}
+
+#story {
+    top: 420px;
+    background-color: #555;
+}
+
+#character {
+    top: 480px;
+    background-color: black;
+}
+
+#reception {
+    top: 540px;
+    background-color: #555;
+}
+
+#media {
+    top: 600px;
+    background-color: #555;
+}
+.top{
+    background: url(../img/top1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height:500px;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    background-color: #C0C0C0;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 352px 352px 352px;
+    grid-template-rows: 384px 384px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    /* Grid with 2 columns and 3 rows */
+    .container{
+        justify-content: space-evenly;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .card-description p {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+    /* Grid with 1 column and 6 rows */
+    .container{
+        justify-content: space-evenly;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 220px);
+        grid-row-gap: 5px;
+    }
+
+    .card-description p {
+        display: none;
+    }
+}
+
+
+
+
+
+.card{
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    opacity: 0.6;
+}
+
+.card-image{
+    height: 220px;
+    width: 352px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 0;
+}
+
+.image-1 {
+    background-image: url("../img/character/lyht.jpg");
+}
+
+.image-2{
+    background-image: url("../img/character/qgf.jpg");
+}
+
+.image-3{
+    background-image: url("../img/character/xed.jpg");
+}
+
+.image-4{
+    background-image: url("../img/character/ywl.jpg");
+}
+
+.image-5{
+    background-image: url("../img/character/ftlj.jpg");
+}
+
+.image-6{
+    background-image: url("../img/character/yla.jpg");
+}
+
+
+.card-description {
+    padding: 0 10px;
+
+}
+
+.card-description h1 {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 5px 5px 5px 5px;
+}
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-window > div {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #888888;
+    overflow:auto
+}
+.modal-window header {
+    font-weight: bold;
+}
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+.modal-close:hover {
+    color: black;
+}

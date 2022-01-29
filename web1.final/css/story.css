@@ -1,0 +1,71 @@
+#homepage {
+    top: 360px;
+    background-color: #555;
+}
+
+#story {
+    top: 420px;
+    background-color: black;
+}
+
+#character {
+    top: 480px;
+    background-color: #555;
+}
+
+#reception {
+    top: 540px;
+    background-color: #555;
+}
+
+#media {
+    top: 600px;
+    background-color: #555;
+}
+.top{
+    background: url(../img/top2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height:700px;
+}
+
+body {
+    background-image:url('../img/bg02.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+.part1 {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.8;
+
+}
+
+.part2 {
+    width: 70%;
+    margin: auto;
+    background-color: deepskyblue;
+    opacity: 0.8;
+
+}
+
+@media screen and (max-width: 700px) {
+    .part1 {
+        width: 100%;
+    }
+
+    .part1 img{
+        display: none;
+    }
+
+    .part2 {
+        width: 100%;
+    }
+
+    .part2 img{
+        display: none;
+    }
+}
+

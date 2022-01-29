@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+#homepage {
+    top: 360px;
+    background-color: #555;
+}
+
+#story {
+    top: 420px;
+    background-color: #555;
+}
+
+#character {
+    top: 480px;
+    background-color: #555;
+}
+
+#reception {
+    top: 540px;
+    background-color: #555;
+}
+
+#media {
+    top: 600px;
+    background-color: black;
+}
+
+.top{
+    background-size: cover;
+    min-height:50px;
+}
+
+body
+{
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: url("../img/top1.jpg")  black no-repeat center center;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.writer {
+    width: 200px;
+    height: auto;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.writer:hover {
+    width: 400px;
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,115 @@
+#homepage {
+    top: 360px;
+    background-color: black;
+}
+
+#story {
+    top: 420px;
+    background-color: #555;
+}
+
+#character {
+    top: 480px;
+    background-color: #555;
+}
+
+#reception {
+    top: 540px;
+    background-color: #555;
+}
+
+#media {
+    top: 600px;
+    background-color: #555;
+}
+
+.top{
+    background: url(../img/top1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height:500px;
+}
+
+.part1 .part1-1,.part1 .part1-2-fixed{
+    width:50%;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.part1 .part1-1,.part1 .part1-2{
+    float: left;
+}
+.part1{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 0;
+}
+.main-box{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #212121;
+    letter-spacing: 2px;
+}
+.wrap-box {
+    padding: 20px;
+}
+.main-box.boxstyle-1{
+    background:seashell;
+}
+
+
+.part2{
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 700px;
+}
+
+.container1 {
+    position: relative;
+    width: 500px;
+    float:left;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.container1:hover .overlay {
+    opacity: 1;
+}
+
+.container2 {
+    position: relative;
+    width: 500px;
+    float:right;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #555;
+}
+
+.container2:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+}

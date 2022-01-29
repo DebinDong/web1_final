@@ -1,2 +1,1 @@
-https://github.com/DebinDong/web1_final.git
-https://github.com/DebinDong/web1_final/web1.final/page/homepage.html
+https://debindong.github.io/web1_final/web1.final/page/homepage.html
